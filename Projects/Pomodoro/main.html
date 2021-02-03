@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=0">
+    <link rel="stylesheet" href="stylesheet.css">
+    <title id="title">25+5 Clock</title>
+
+<body>
+    <div id="main_section">
+        <div>
+            <div id="clock_circle">
+                <p id="break_focus_label">focus</p>
+                <!-- <p class ="time_unit" id="hour">5</p>
+                <p class ="time_unit" >:</p> -->
+                <p class="time_unit" id="minute">25</p>
+                <p class="time_unit">:</p>
+                <p class="time_unit" id="second">00</p>
+            </div>
+            <p id="completed" class="completion">0</p>
+            <p class="completion">/</p>
+            <p id="total" class="completion">5</p>
+            <br>
+            <button id="start_pause_button">Start</button>
+            <button id="stop_button">Stop</button>
+        </div>
+    </div>
+
+    <script>
+        const label = document.getElementById('break_focus_label');
+        const minuteLabel = document.getElementById('minute');
+        const secondLabel = document.getElementById('second');
+        const completedLabel = document.getElementById('completed')
+        const totalLabel = document.getElementById('total')
+        const startPauseButton = document.getElementById('start_pause_button');
+        const stopButton = document.getElementById('stop_button');
+        const title = document.getElementById('title');
+
+        let minute = parseInt(minuteLabel.innerText);
+        let second = parseInt(secondLabel.innerText);
+        let completed = parseInt(completedLabel.innerText);
+        let total = parseInt(totalLabel.innerText);
+        let interval;
+
+        function countDown() {
+            second--;
+            if (second < 0) {
+
+                minute--;
+                if (minute < 0) {
+                    if (label.innerText == 'focus') {
+                        label.innerText = 'break';
+                        completed++;
+                    } else {
+                        label.innerText = 'focus';
+                    }
+                    completedLabel.innerText = completed;
+                    resetClock();
+                } else {
+                    second = 59;
+                    document.getElementById('second').innerText = formatTime(second);
+                    document.getElementById('minute').innerText = formatTime(minute);
+                }
+
+            } else {
+                document.getElementById('second').innerText = formatTime(second);
+            }
+            title.innerText = formatTime(minute) +":"+ formatTime(second);;
+        }
+
+        function formatTime(unit) {
+            if (unit < 10) {
+                return "0" + "" + unit;
+            } else {
+                return unit;
+            }
+        }
+
+        function resetClock() {
+            if (label.innerText == 'break') {
+                minute = 5;
+                second = 0;
+                document.getElementById('second').innerText = formatTime(second);
+                document.getElementById('minute').innerText = formatTime(minute);
+            } else {
+                minute = 25;
+                second = 0;
+                document.getElementById('second').innerText = formatTime(second);
+                document.getElementById('minute').innerText = formatTime(minute);
+            }
+        }
+
+        function startOrPauseClock() {
+            if (startPauseButton.innerText == 'Start') {
+                interval = setInterval(countDown, 1000);
+                startPauseButton.innerText = 'Pause'
+            } else {
+                startPauseButton.innerText = 'Start'
+                clearInterval(interval)
+            }
+        }
+
+        function stopClock() {
+            startPauseButton.innerText = 'Start'
+            clearInterval(interval)
+            resetClock();
+        }
+
+        startPauseButton.addEventListener('click', startOrPauseClock);
+        stopButton.addEventListener('click', stopClock)
+
+    </script>
+</body>
+</head>
+
+</html>

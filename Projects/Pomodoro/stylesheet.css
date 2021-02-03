@@ -1,0 +1,46 @@
+
+html{
+    width: 100%;
+    height: 100%;
+    background-color: rgb(104, 62, 102);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: 'Didot';
+}
+
+#main_section {
+    text-align: center;
+}
+
+#clock_circle {
+    position: relative;
+    background-color: rgb(209, 135, 51);
+    width: 400px;
+    height: 400px;
+    color: white;
+    border-radius: 400px;
+    align-content: center;
+}
+
+#break_focus_label {
+    padding-top: 70px;
+    font-size: 40px;
+}
+
+.time_unit{
+    display: inline;
+    font-size: 60px;
+}
+
+.completion {
+    display: inline;
+    font-size: 40px;
+    font-family: 'Candara';
+}
+
+button {
+    display: inline-block;
+    background-color: tomato;
+    font-size: 30px;
+}
