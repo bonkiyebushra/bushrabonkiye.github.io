@@ -14,7 +14,3 @@ document.getElementById("todo_list_proj").onclick = function () {
 document.getElementById("quote_generator_proj").onclick = function() {
     location.href = "Projects/QuoteGenerator/main.html"
 }
-
-document.getElementById('github_icon').onclick = function () {
-    location.href = 'www.google.com'
-}

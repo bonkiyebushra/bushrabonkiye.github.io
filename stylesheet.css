@@ -6,79 +6,125 @@
         
         #navbar {
             position: fixed;
-            background-color:#87919E;
             width: 100%;
-            height: 50px;
             color: black;
+            text-align: center;
+        }
+
+        ul {
+            background-color: #F7F7F7;
+            width: 600px;
+            margin: 10px auto 10px auto;
         }
         
         ul li {
             display: inline-block;
             padding: 0px 20px;
             font-size: 20px;
+            
+        }
+
+        ul li a {
+            text-decoration: none;
+            
+            color:#0096FF;
         }
 
         h1 {
             font-size: 5em;
+            font-family: 'Domine', serif;
         }
 
         h3 {
             font-size: 3em;
         }
 
+        #projects,.project-header,#projects,#contact {
+            text-align: center;
+        }
+
         #welcome-section {
-            background-image: url('https://wallpapercave.com/wp/wp4476435.jpg'); 
-            background-color: #3fc29b;
-            height: 100vh;
-            width: 100%;
-            line-height: 100vh;
-            padding-top: 50px;
+            background-color: #F7F7F7;
+            display: flex;
+            flex-direction: row;
+            height: 50vh;
+            padding: 50px 10px 20px 20px ;
             color:white;
         }
 
+        .image {
+            height: 100%;
+            width: auto;
+            float: left;
+        }
+
+        #portrait {
+            height: 100%;
+            width: 100%;
+        }
+
+        .text {
+            float: right;
+            width: 50%;
+            margin-left: 5%;
+        }
+        /* #welcome-section img {
+            margin: 50px 10px 30px 20px;
+        } */
+
+        #welcome-section p {
+            display: inline-block;
+            font-family: 'Open Sans Condensed', sans-serif;
+            color: #393E46;
+           
+        }
 
         #projects {
-            background-color: #34D1BF;
-            color: black;
-
+            background-color: #393E46;
+            color: white;
         }
 
         #contact {
-            background: #1D1E18;
+            background-color: #929AAB;
             color: white;
         }
 
         .project-header {
             background-color: #87919E;
-            height: 40px;
-            margin-top: 0px;
-            padding-top: 3px;
-            padding-bottom: 3px;
+            width: 100%;
+            margin-left: auto;
+            margin-right: auto;
+        }
+
+        .project-tiles {
+            display: grid;
+            width: 99%;
+            height: 90%;
+            grid-template-columns: 30% 30% 30%;
+            column-gap: 3%;
+            margin: 3% auto 100px auto;
+            justify-content: center;
         }
 
         .url-box {
             height: 30px;
-            width: 330px;
-            background-color:  #EB5E55;
+            /*width: 330px; */
+            width: 60%;
+            background-color:  #FF5959;
             line-height: 30px;
             margin: 3px auto 3px auto;
             color: white;
             border-radius: 15px;
         }
 
-        .project-tiles {
-            display: grid;
-            grid-template-columns: 600px 600px 600px;
-            margin-top: 20px;
+        .project-box img {
+            width: 100%;
+            height: auto;
+            cursor: pointer;
         }
 
-         .project-box {
-            display: grid;
-            margin: 10px 15px 10px 15px;
-        } 
-
         #contact {
-            padding-top: 10px;
+            /* padding-top: 10px; */
             padding-bottom: 150px;
         }
 
