@@ -14,3 +14,7 @@ document.getElementById("todo_list_proj").onclick = function () {
 document.getElementById("quote_generator_proj").onclick = function() {
     location.href = "Projects/QuoteGenerator/main.html"
 }
+
+document.getElementById("top_level_proj").onclick = function() {
+    location.href = "Projects/TopLevelLockAndKey/index.html"
+}
