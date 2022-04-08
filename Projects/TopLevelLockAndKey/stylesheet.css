@@ -1,12 +1,11 @@
 html {
   font-size: 100%;
-  font-family: "Montserrat", sans-serif;
+  font-family: "Playfair Display", serif;
   background-color: #f5f5f5;
   color: black;
 }
 
-h1 {
-  font-family: "Playfair Display", serif;
+h1,h2,h3 {
   text-align: left;
   text-transform: uppercase;
 }
@@ -57,8 +56,21 @@ nav a {
 }
 
 nav a:hover {
-  background-color: rgb(209, 228, 209);
+  background-color: #929AAB;
   color: #fff;
+}
+
+#home_section {
+  /* width: 100vw; */
+  background-image: url('images/stock-photo-several-keys-type-such-as-household-and-car-key-use-for-copying-or-duplicating-hang-on-the-wall-in-1129717979.jpg');
+  background-size: cover;
+  background-position: center;
+  color: black;
+  height:52vh;
+}
+
+#home_section_container {
+  width: 95vw;
 }
 
 #section_container {
@@ -74,6 +86,7 @@ nav a:hover {
 }
 
 #home_text {
+  background-color:#929aabc5;
   width: 40%;
   display: flex;
   flex-direction: column;
@@ -133,6 +146,7 @@ nav a:hover {
 #service_images {
   display: flex;
   flex-direction: column;
+  justify-content: center;
 }
 
 .service_image {
@@ -176,6 +190,7 @@ nav a:hover {
     background-color: #EEEEEE;
    
 }
+
 
 #email-form div {
   margin: 0.5rem;
@@ -275,7 +290,25 @@ footer a {
   } */
 
   #services_section .section_container {
-    flex-direction: column;
+    /* flex-direction: column; */
+  }
+
+  /* #service_images {
+    display: flex;
+    flex-direction: row;
+  }
+   */
+  #service_images img:nth-child(2n) {
+    margin-left: 0;
+  }
+
+}
+
+
+@media (max-width: 600px) {
+
+  #services_section .section_container {
+    flex-direction: column; 
   }
 
   #service_images {
@@ -283,8 +316,5 @@ footer a {
     flex-direction: row;
   }
   
-  #service_images img:nth-child(2n) {
-    margin-left: 0;
-  }
 
 }

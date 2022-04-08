@@ -1,0 +1,24 @@
+Keyme
+
+Header-
+	Page nav
+
+Pages-
+Home
+	
+Services
+	car key copying
+	unlocking locked door
+	
+Testimony(What customers say about us)
+About Us
+Contact us
+	phone number
+	email
+	request a quote?
+
+
+Footer-
+	Email
+	Contact number
+	page nav
