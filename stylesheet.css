@@ -47,8 +47,8 @@ h3 {
 }
 
 #name {
-  color: #0f189e;
-  font-family: "Edu TAS Beginner", cursive;
+  /* color: #0f189e; */
+  /* font-family: "Edu TAS Beginner", cursive; */
 }
 
 #projects,
@@ -83,9 +83,9 @@ main {
   height: 100%;
   width: 100%;
   border-radius: 100%;
-  border: #0bb0b086 2px solid;
-  background-color: #7993b139;
-  box-shadow: 0px 0px 5px rgba(237, 100, 15, 0.534);
+  border: #0f189e 2px solid;
+  /* background-color: #7993b139; */
+  /* box-shadow: 0px 0px 5px rgba(237, 100, 15, 0.534); */
 }
 
 .text {
