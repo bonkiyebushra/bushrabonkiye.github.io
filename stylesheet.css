@@ -229,6 +229,10 @@ footer>p {
         margin-left: .6rem;
     }
 
+    #menu_bar path {
+        fill: white;
+    }
+
     header {
         padding-top: .25rem;
     }
