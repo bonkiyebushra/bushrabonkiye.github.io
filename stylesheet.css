@@ -1,144 +1,261 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
 
-        body {
-            margin: 0;
-            padding: 0;
-        }
+html {
+  font-size: 16px;
+  font-family: "Domine", serif;
+  color: #406882;
+}
+
+header {
+  position: fixed;
+  height: 2rem;
+  padding-top: 0.5rem;
+  width: 100%;
+  background-color: #3f4e4f;
+}
+
+#menu_bar {
+    display: none;
+}
+
+#navbar {
+  width: fit-content;
+  margin-top: 10px auto 10px auto;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+#navbar > a {
+  text-decoration: none;
+  color: white;
+  margin-right: 1rem;
+  font-size: 1.25rem;
+}
+
+h1 {
+  font-size: 5em;
+  font-family: "Domine", serif;
+}
+
+h3 {
+  font-size: 3em;
+  margin-bottom: 1rem;
+}
+
+#name {
+  color: #0f189e;
+  font-family: "Edu TAS Beginner", cursive;
+}
+
+#projects,
+.project-header,
+#projects,
+#contact {
+  text-align: center;
+}
+
+main {
+  display: flex;
+  flex-direction: column;
+}
+
+#welcome-section {
+  background-color: #fdf6ec;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 50px 10px 20px 20px;
+  margin-top: 2rem;
+  /* color:white; */
+}
+
+.portrait_box {
+  height: 20rem;
+  width: 20rem;
+  margin-bottom: 2rem;
+}
+
+#portrait {
+  height: 100%;
+  width: 100%;
+  border-radius: 100%;
+  border: #0bb0b086 2px solid;
+  background-color: #7993b139;
+  box-shadow: 0px 0px 5px rgba(237, 100, 15, 0.534);
+}
+
+.text {
+  width: 50%;
+  text-align: center;
+  margin-bottom: 3rem;
+}
+
+#welcome-section p {
+  color: #0f189e;
+}
+
+#projects {
+  color: white;
+  background-color: #3f4e4f;
+  min-height: 40rem;
+}
+
+#contact {
+  background-color: #929aab;
+}
+
+.project-header {
+  background-color: #fdf6ec;
+  color: #406882;
+  line-height: min(1.5rem);
+  width: 100%;
+}
+
+.project-tiles {
+  display: grid;
+  width: 99%;
+  height: 90%;
+  grid-template-columns: 30% 30% 30%;
+  column-gap: 3%;
+  row-gap: 2rem;
+  margin: 3% auto 100px auto;
+  justify-content: center;
+}
+
+.project-box img {
+  width: 100%;
+  height: auto;
+  cursor: pointer;
+}
+
+#top_level_proj {
+  width: 100%;
+  height: 43%;
+}
+
+#contact {
+  padding-bottom: 9rem;
+  background-color: #fdf6ec;
+}
+
+#contact h1 {
+  margin-bottom: 100px;
+}
+
+#contact a {
+  padding: 145px 20px 45px 20px;
+}
+
+.github {
+  color: #3f4e4f;
+}
+
+.linkedin {
+  color: rgb(10, 102, 194);
+}
+
+.email {
+    height: 9rem;
+}
+
+footer {
+    padding: 2rem;
+    background-color: #3f4e4f;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    color: white;
+}
+
+#footer_nav>a {
+    margin-right: 1rem;
+    text-decoration: none;
+    color: white;
+}
+
+footer>p>a {
+    text-decoration: none;
+    color: white;
+}
+
+footer hr {
+    width: 90%;
+    color: green;
+    margin: 1rem 0 1rem 0;
+}
+
+footer>p {
+    right: auto;
+}
+
+@media (max-width:750px) {
+
+    html {
+        font-size: 14px;
+    }
+
+    .project-tiles {
+        grid-template-columns: 47% 47%;
+    }
+
+    .text {
+        width: 75%;
+        margin-bottom: 1.5rem;
+      }
+}
+
+@media (max-width:550px) {
+    h1 {
+        font-size: 4rem;
+    }
+
+    h3 {
+        font-size: 2rem;
+    }
+    
+    .project-tiles {
+        grid-template-columns: 92%;
         
-        #navbar {
-            position: fixed;
-            width: 100%;
-            color: black;
-            text-align: center;
-        }
+    }
 
-        ul {
-            background-color: #F7F7F7;
-            width: 600px;
-            margin: 10px auto 10px auto;
-        }
-        
-        ul li {
-            display: inline-block;
-            padding: 0px 20px;
-            font-size: 20px;
-            
-        }
+    #menu_bar {
+        display: block;
+        height: 1.5rem;
+        margin-left: .6rem;
+    }
 
-        ul li a {
-            text-decoration: none;
-            
-            color:#0096FF;
-        }
+    header {
+        padding-top: .25rem;
+    }
 
-        h1 {
-            font-size: 5em;
-            font-family: 'Domine', serif;
-        }
+    #navbar {
+        position: absolute;
+        font-size: 1rem;
+        background-color: rgb(249, 249, 249);
+        color: black;
+        display: none;
+        flex-direction: column;
+        left: .6rem;
+        top:2rem;
+    }
 
-        h3 {
-            font-size: 3em;
-        }
+    #navbar a {
+        color: black;
+        margin-bottom: .5rem;
+    }
 
-        #projects,.project-header,#projects,#contact {
-            text-align: center;
-        }
+    footer {
+        padding: 1rem 0 1rem 0;
+    }
 
-        #welcome-section {
-            background-color: #F7F7F7;
-            display: flex;
-            flex-direction: row;
-            height: 50vh;
-            padding: 50px 10px 20px 20px ;
-            color:white;
-        }
-
-        .image {
-            height: 100%;
-            width: auto;
-            float: left;
-        }
-
-        #portrait {
-            height: 100%;
-            width: 100%;
-        }
-
-        .text {
-            float: right;
-            width: 50%;
-            margin-left: 5%;
-        }
-        /* #welcome-section img {
-            margin: 50px 10px 30px 20px;
-        } */
-
-        #welcome-section p {
-            display: inline-block;
-            font-family: 'Open Sans Condensed', sans-serif;
-            color: #393E46;
-           
-        }
-
-        #projects {
-            background-color: #393E46;
-            color: white;
-        }
-
-        #contact {
-            background-color: #929AAB;
-            color: white;
-        }
-
-        .project-header {
-            background-color: #87919E;
-            width: 100%;
-            margin-left: auto;
-            margin-right: auto;
-        }
-
-        .project-tiles {
-            display: grid;
-            width: 99%;
-            height: 90%;
-            grid-template-columns: 30% 30% 30%;
-            column-gap: 3%;
-            margin: 3% auto 100px auto;
-            justify-content: center;
-        }
-
-        .url-box {
-            height: 30px;
-            /*width: 330px; */
-            width: 60%;
-            background-color:  #FF5959;
-            line-height: 30px;
-            margin: 3px auto 3px auto;
-            color: white;
-            border-radius: 15px;
-        }
-
-        .project-box img {
-            width: 100%;
-            height: auto;
-            cursor: pointer;
-        }
-
-        #top_level_proj {
-            width: 100%;
-            height: 43%;
-        }
-
-        #contact {
-            /* padding-top: 10px; */
-            padding-bottom: 150px;
-        }
-
-        #contact h1{
-            margin-bottom: 100px;
-        }
-
-        #contact a {
-            padding: 145px 20px 45px 20px;
-        }
-
-        
+    #footer_nav {
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+    }
+}
