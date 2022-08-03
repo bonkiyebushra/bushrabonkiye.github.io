@@ -1,0 +1,88 @@
+main {
+  background-color: rgb(254, 252, 252);
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 2rem;
+  margin-bottom: 3rem;
+  border: solid 2px rgba(0, 0, 0, 0.242);
+  border-radius: 0.5rem;
+  padding: 2rem 0;
+  width: 60rem;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+#form_fields>div {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 45rem;
+  margin-bottom: 1rem;
+}
+
+form input {
+  /* background-color: rgb(245, 245, 245); */
+  background-color: white;
+  border: solid 2px hsla(223, 87%, 63%, 0.295);
+  /* border-bottom: solid 2px rgb(113, 112, 112); */
+  height: 2.75rem;
+  width: 20rem;
+  /* border-radius: 0rem 0.5rem 0 0; */
+  border-radius: 3rem;
+  padding: 0 1rem;
+}
+
+form input[name="address"] {
+  width: 45rem;
+}
+
+form input[name="state"],
+form input[name="zip_code"] {
+  width: 7.5rem;
+}
+
+.form_input_box {
+  position: relative;
+}
+
+.form_input_box label {
+  position: absolute;
+  background-color: rgba(255, 255, 255, 0.913);
+  display: none;
+}
+
+.form_input_box input:not(:placeholder-shown) ~ label {
+  display: block;
+  left: 1rem;
+  top: -0.6rem;
+  padding-top: 0;
+}
+
+textarea {
+  width: 45rem;
+  height: 10rem;
+  resize: none;
+  border-radius: 0.5rem;
+  border: solid 2px hsla(223, 87%, 63%, 0.295);
+  margin-bottom: 2rem;
+  padding: 0.5rem;
+}
+
+button {
+  width: 22.5rem;
+  height: 2.75rem;
+  font-size: 1.25rem;
+  background-color: hsl(223, 87%, 63%);
+  color: white;
+  border: 2px solid gray;
+  border-radius: 3rem;
+}
+
+button:hover {
+  background-color: #54be73;
+  color: black;
+}

@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- displays site properly based on user's device -->
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Domine&family=Outfit&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="shortcut icon" href="images/logo-removebg-preview.png" />
+    <link rel="stylesheet" href="style.css" class="rel" />
+    <link rel="stylesheet" href="service_requests_style.css" class="rel" />
+    <title>Hey Nerd Fix It</title>
+  </head>
+
+  <body>
+    <header>
+      <div id="top_bar">
+        <div id="menu_logo">
+          <svg
+            id="menu_bar"
+            onclick="handleMenuClick()"
+            xmlns="http://www.w3.org/2000/svg"
+            viewBox="0 0 448 512"
+          >
+            <!--! Font Awesome Pro 6.1.1 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2022 Fonticons, Inc. -->
+            <path
+              d="M0 96C0 78.33 14.33 64 32 64H416C433.7 64 448 78.33 448 96C448 113.7 433.7 128 416 128H32C14.33 128 0 113.7 0 96zM0 256C0 238.3 14.33 224 32 224H416C433.7 224 448 238.3 448 256C448 273.7 433.7 288 416 288H32C14.33 288 0 273.7 0 256zM416 448H32C14.33 448 0 433.7 0 416C0 398.3 14.33 384 32 384H416C433.7 384 448 398.3 448 416C448 433.7 433.7 448 416 448z"
+            />
+          </svg>
+          <img id="logo" src="images/logo-removebg-preview.png" />
+        </div>
+        <div id="top_bar_text">
+          <h3>Why call a Geek? When you can call a Nerd!</h3>
+          <h3>
+            Just Yell "Hey Nerd Fix It" or Call
+            <a href="" id="call_to_action">614-571-4224</a>
+          </h3>
+        </div>
+      </div>
+      <nav id="navbar">
+        <a href="/">Home</a>
+        <a href="/on_site_services.html">On-Site Services</a>
+        <a href="/service_requests.html" style="color: #54be73">Service Requests</a>
+        <a href="faq.html">FAQs</a>
+        <div id="contact_action">
+          <span>
+            <a href="">Call</a> Or
+            <a href="/service_requests.html">Message Us</a>
+          </span>
+        </div>
+      </nav>
+
+      <div id="locations">
+        <p id="desktop_locations">
+          Now Serving Columbus, Ohio and Central Ohio, including: Bexley,
+          Dublin, Gahanna, Grandview, Grove City, Hilliard, New Albany,
+          Pickerington, Reynoldsburg, Upper Arlington, Westerville, Whitehall,
+          Worthington.
+        </p>
+        <p id="mobile_locations">Now serving Columbus,Ohio and Central Ohio</p>
+      </div>
+      <a id="mobile_call" href="">Call 614-571-4224</a>
+    </header>
+
+    <main>
+      <form>
+        <div id="form_instructions">
+          <p>
+            Please enter your info along with some comment about what service
+            you would like performed and we will get back to you.
+          </p>
+          <p>
+            <b>Fields with * are required</b>
+          </p>
+        </div>
+        <div id="form_fields">
+          <div>
+            <span class="form_input_box">
+              <input
+                type="text"
+                name="name"
+                id=""
+                placeholder="Name*"
+                required
+              />
+              <label for="name">Name</label>
+            </span>
+            <span class="form_input_box">
+              <input
+                type="text"
+                name="email"
+                id=""
+                placeholder="Email*"
+                required
+              />
+              <label for="email">Email</label>
+            </span>
+          </div>
+
+          <div>
+            <span class="form_input_box">
+              <input
+                type="text"
+                name="phone_number"
+                id=""
+                placeholder="Phone Number"
+              />
+              <label for="address">Phone Number</label>
+            </span>
+            <span class="form_input_box">
+              <input
+                type="text"
+                name="company"
+                id=""
+                placeholder="Company/Organization"
+              />
+              <label for="company">Company/Organization</label>
+            </span>
+          </div>
+
+          <div class="form_input_box">
+            <input
+              type="text"
+              name="address"
+              id=""
+              placeholder="Street Address"
+            />
+            <label for="address">Street Address</label>
+          </div>
+
+          <div>
+            <span class="form_input_box">
+              <input type="text" name="city" id="" placeholder="City" />
+              <label for="city">City</label>
+            </span>
+            <span class="form_input_box">
+              <input type="text" name="state" id="" placeholder="State" />
+              <label for="state">State</label>
+            </span>
+            <span class="form_input_box">
+              <input
+                type="text"
+                inputmode="numeric"
+                name="zip_code"
+                id=""
+                placeholder="Zip Code"
+              />
+              <label for="address">Zip Code</label>
+            </span>
+          </div>
+
+          <textarea
+            placeholder="Comments, Questions, Suggestions...*"
+          ></textarea>
+        </div>
+        <button>Submit</button>
+      </form>
+    </main>
+
+    <footer>
+      <p>This site is made with 100% recycled pixels. :)</p>
+
+      <p>
+        Computer (PC and laptop) repair services for Columbus, Ohio and Central
+        Ohio, including: Bexley, Dublin, Gahanna, Grandview, Grove City,
+        Hilliard, New Albany, Pickerington, Reynoldsburg, Upper Arlington,
+        Westerville, Whitehall, Worthington.
+      </p>
+
+      <p>Pickerington, Ohio 43204 | <a href="">614-571-4224</a>|</p>
+
+      <div>
+        <p>HeyNerdFixit.com © 2022</p>
+        <hr />
+        <a href="">Privacy Policy</a>
+        <hr />
+        <p>Website design by Hey Nerd Fix It.com</p>
+      </div>
+    </footer>
+  </body>
+</html>
