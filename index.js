@@ -8,6 +8,10 @@ document.getElementById("pomodoro_proj").onclick = function () {
     location.href = "/Projects/Pomodoro/main.html"
 }
 
+document.getElementById("heynerdfixit_proj").onclick = function () {
+    location.href = "/Projects/heynerdfixit/index.html"
+}
+
 function handleMenuClick() {
     if(isMenuActive) {
         document.getElementById("navbar").style.display = "none"
