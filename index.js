@@ -9,7 +9,7 @@ document.getElementById("pomodoro_proj").onclick = function () {
 }
 
 document.getElementById("heynerdfixit_proj").onclick = function () {
-    location.href = "/Projects/heynerdfixit/index.html"
+    location.href = "/Projects/HeyNerdFixIt/index.html"
 }
 
 function handleMenuClick() {
