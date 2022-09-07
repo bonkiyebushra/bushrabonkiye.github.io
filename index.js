@@ -12,6 +12,10 @@ document.getElementById("heynerdfixit_proj").onclick = function () {
     location.href = "/Projects/HeyNerdFixIt/index.html"
 }
 
+document.getElementById("merve_care_proj").onclick = function () {
+    location.href = "/Projects/Healthcare/index.html"
+}
+
 function handleMenuClick() {
     if(isMenuActive) {
         document.getElementById("navbar").style.display = "none"
