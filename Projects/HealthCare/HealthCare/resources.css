@@ -1,0 +1,8 @@
+#resources_top_section {
+    height: 75vh;
+    background-image: url('images/pexels-pixabay-45842.jpg');
+}
+
+#resources_list p {
+    display: inline-block;
+}

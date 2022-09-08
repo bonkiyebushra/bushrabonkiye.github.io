@@ -1,0 +1,59 @@
+#services_top_section {
+  height: 75vh;
+  background-image: url("images/pexels-andrea-piacquadio-3768131.jpg");
+}
+
+#services {
+  gap: 4rem 4rem;
+}
+
+.service {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  align-items: center;
+  background-size: cover;
+  width: 25rem;
+  height: 20rem;
+  background-repeat: no-repeat;
+}
+
+.service h3 {
+  background-color: blanchedalmond;
+  width: 100%;
+  margin-top: auto;
+  margin-bottom: 0.5rem;
+  text-align: center;
+}
+
+#personal_care_service {
+  background-image: url("images/personal_care.jpg");
+}
+
+#housekeeping_service {
+  background-image: url("images/housekeeping.jpg");
+}
+
+#respite_care_service {
+  background-image: url("images/respite_care.jpg");
+}
+
+#home_visit_service {
+  background-image: url("images/home_visits.jpg");
+}
+
+#intermittent_chore_service {
+  background-image: url("images/chore.jpg");
+}
+
+#miscellaneous_service {
+  background-image: url("images/miscellaneous.jpg");
+}
+
+p a {
+  color: rgb(161, 14, 14);
+}
+
+div ul li {
+  list-style: inside;
+}
