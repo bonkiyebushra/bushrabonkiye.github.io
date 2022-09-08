@@ -13,7 +13,7 @@ document.getElementById("heynerdfixit_proj").onclick = function () {
 }
 
 document.getElementById("merve_care_proj").onclick = function () {
-    location.href = "/Projects/Healthcare/index.html"
+    location.href = "/Projects/HealthCare/index.html"
 }
 
 function handleMenuClick() {
