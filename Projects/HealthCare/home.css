@@ -1,10 +1,11 @@
 #home_top_section {
     position: relative;
-    height: 75vh;
+    height: 50.1rem;
     background-image: linear-gradient(to left, rgba(255,255,255,0) 40%,
     rgb(173, 63, 63)), url('images/nurse-pointing-old-man-s-book.jpg') ;
     background-size: 100%;
     margin-top: 1rem;
+    background-repeat: no-repeat;
 }
 
 #top_section_text {

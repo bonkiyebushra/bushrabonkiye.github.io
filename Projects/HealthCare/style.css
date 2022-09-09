@@ -75,11 +75,29 @@ footer {
 #nav_area ul {
   width: 70%;
   display: flex;
-  /* justify-content: space-evenly; */
+  justify-content: center;
+  height: fit-content;
+  margin-top: auto;
 }
 
 #nav_area ul li {
-  padding: 1rem 3.5rem;
+  /* padding: 1rem 2.5rem; */
+  height: 3.5rem;
+  width: 7.5rem;
+}
+
+#nav_area ul li:hover {
+  background-color: #256709ba;
+  color: white;
+}
+
+#nav_area ul li a{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+  width: 100%;
+  font-size: 1.15rem;
 }
 
 #facebook_icon {
@@ -204,4 +222,21 @@ hr {
   border-style: none none dashed;
   color: #fff;
   background-color: #fff;
+}
+
+#appointment_form label {
+  display: block;
+}
+
+#appointment_form div {
+  margin-bottom: .75rem;
+}
+
+#contact_method_field label{
+  display: inline;
+  margin-right: 1rem;
+}
+
+.radio_label {
+  margin-right: .75rem;
 }
