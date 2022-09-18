@@ -1,6 +1,3 @@
-[submodule "Merve-Care"]
-	path = Merve-Care
-	url = https://github.com/bonkiyebushra/Merve-Care
 [submodule "Projects/Merve-Care"]
 	path = Projects/Merve-Care
 	url = https://github.com/bonkiyebushra/Merve-Care
