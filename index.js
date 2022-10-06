@@ -13,7 +13,7 @@ document.getElementById("heynerdfixit_proj").onclick = function () {
 }
 
 document.getElementById("merve_care_proj").onclick = function () {
-    location.href = "/Projects/Merve-Care/index.html"
+    location.href = "https://demo.bushrabonkiye.me"
 }
 
 function handleMenuClick() {
