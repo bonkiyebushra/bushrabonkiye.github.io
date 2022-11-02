@@ -1,19 +1,11 @@
 let isMenuActive = false;
 
-document.getElementById("techdoc_proj").onclick = function () {
-    location.href = "/Projects/FCCTechnicalDocumentation/main.html"
-}
-
-document.getElementById("pomodoro_proj").onclick = function () {
-    location.href = "/Projects/Pomodoro/main.html"
-}
-
-document.getElementById("heynerdfixit_proj").onclick = function () {
-    location.href = "/Projects/HeyNerdFixIt/index.html"
+document.getElementById("computer_repair_guy").onclick = function () {
+    location.href = "/Projects/computer_repair_guy/index.html"
 }
 
 document.getElementById("merve_care_proj").onclick = function () {
-    location.href = "https://demo.bushrabonkiye.me"
+    location.href = "https://mervecare.com"
 }
 
 function handleMenuClick() {
