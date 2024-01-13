@@ -19,13 +19,14 @@
       href="https://fonts.googleapis.com/css2?family=Domine:wght@600&display=swap"
       rel="stylesheet"
     />
-    <link rel="shortcut icon" href="images/favicon.png" />
+    <link rel="shortcut icon" href="images/bb_logo.png" />
     <title>Bushra- Web Developer</title>
   </head>
 
   <body>
     <div class="container_fluid">
       <header>
+        <a href="./"><img src="./images/bb_logo.png" /></a>
         <svg
           id="menu_bar"
           onclick="handleMenuClick()"
@@ -41,7 +42,10 @@
           <a href="#welcome-section">HOME</a>
           <a href="#projects">PROJECTS</a>
           <a href="#contact">CONTACT LINKS</a>
-          <a href="https://drive.google.com/file/d/1AF__sCm8cwG-QUPlAn1b6k8QFKg1zoj9/view?usp=drive_link.pdf">RESUMÉ</a>
+          <a
+            href="https://drive.google.com/file/d/1AF__sCm8cwG-QUPlAn1b6k8QFKg1zoj9/view?usp=drive_link.pdf"
+            >RESUMÉ</a
+          >
         </nav>
       </header>
       <main>
@@ -59,9 +63,72 @@
           </div>
         </section>
 
+        <section class="text-center" id="services">
+          <h2>Services</h2>
+          <div class="service_tiles">
+            <div class="service_box">
+              <img class="service_icon" src="images/wordpress.svg" />
+              <h4>Wordpress Development</h4>
+              <p>
+                Whether you want a small landing page to showcase you businesses
+                growing brand, a simple ecommerce website to sell products, or
+                what have you this could be an ideal select. Wordpresses
+                powerful content management system makes it easy to build such
+                websites. And if you need a little more control and wish to make
+                changes I can work with you to set that up
+              </p>
+            </div>
+            <div class="service_box">
+              <img class="service_icon" src="images/webdev.svg" />
+              <h4>Web App Development</h4>
+              <p>
+                For all those websites that you want to tailor to your own
+                wishes this is the way to go. I can build out a nice web site
+                with all the bells and whistles to allow your website to cater
+                to you customers, employees, or business clients.
+              </p>
+            </div>
+          </div>
+        </section>
+
         <section class="text-center" id="projects">
-          <h1>PROJECTS</h1>
+          <h2>Projects</h2>
+          
           <div class="project-tiles">
+
+            <div class="project-box">
+              <img
+                id="merve_care_proj"
+                class="proj"
+                src="images/female_fight_club.png"
+              />
+              <div class="project-header">
+                <p>Female Fight Club Columbus</p>
+              </div>
+            </div>
+            
+            <div class="project-box">
+              <img
+                id="merve_care_proj"
+                class="proj"
+                src="images/galacticosfc.png"
+              />
+              <div class="project-header">
+                <p>Galacticos FC</p>
+              </div>
+            </div>
+
+            <div class="project-box">
+              <img
+                id="merve_care_proj"
+                class="proj"
+                src="images/sports_academy_travel.png"
+              />
+              <div class="project-header">
+                <p>Sports Academy Travel</p>
+              </div>
+            </div>
+
             <div class="project-box">
               <img
                 id="merve_care_proj"
@@ -72,26 +139,95 @@
                 <p>Merve Care LLC</p>
               </div>
             </div>
+
             <div class="project-box">
               <img
-                id="computer_repair_guy"
+                id="merve_care_proj"
                 class="proj"
-                src="images/computer_repair_guy.png"
+                src="images/ajforeignanddomestic.png"
               />
               <div class="project-header">
-                <p>Computer Repair Guy</p>
+                <p>A & J Foreign & Domestic </p>
               </div>
             </div>
+
+            <div class="project-box">
+              <img
+                id="merve_care_proj"
+                class="proj"
+                src="images/columbus_car_key_and_lock.png"
+              />
+              <div class="project-header">
+                <p>Columbus Car Key and Lock Solution </p>
+              </div>
+            </div>
+            
           </div>
         </section>
         <section class="text-center" id="contact">
-          <h1>FIND ME ON</h1>
-          <a href="https://github.com/bonkiyebushra"
-            ><i class="fab fa-github fa-10x github"></i
-          ></a>
-          <a href="https://www.linkedin.com/in/bushra-b-687897125/"
-            ><i class="fab fa-linkedin fa-10x linkedin"></i
-          ></a>
+          <h2>Let's Get In Touch</h2>
+          <div id="contact_card">
+            <div id="contact_form">
+              <form
+                data-netlify="true"
+                name="contact_us_form_home"
+                method="POST"
+              >
+                <div class="form_row">
+                  <div class="form_field">
+                    <label for="first_name">First Name *</label>
+                    <input type="text" name="first_name" id="" required />
+                  </div>
+                  <div class="form_field">
+                    <label for="last_name">Last Name</label>
+                    <input type="text" name="last_name" id="" />
+                  </div>
+                </div>
+                <div class="form_row">
+                  <div class="form_field">
+                    <label for="email">Email Address *</label>
+                    <input type="email" name="email" id="" required />
+                  </div>
+                  <div class="form_field">
+                    <label for="phone_number">Phone Number</label>
+                    <input
+                      type="text"
+                      pattern="^(\+\d{1,2}\s)?\(?\d{3}\)?[\s.-]\d{3}[\s.-]\d{4}$"
+                      name="pbone_number"
+                      id=""
+                    />
+                  </div>
+                </div>
+                <div class="form_row form_field">
+                  <label for="message">Message *</label>
+                  <textarea
+                    name="message"
+                    id=""
+                    cols="30"
+                    rows="10"
+                    required
+                  ></textarea>
+                </div>
+                <input type="submit" value="Submit Your Message" />
+              </form>
+            </div>
+            <div id="social_media">
+              <p>
+                Want to get in touch to discuss employment opportunites or want
+                a website built then send me a message using the form on the
+                left. Also connect with me on LinkedIn or check out my work on
+                GitHub!
+              </p>
+              <div class="social_media_icons">
+                <a href="https://github.com/bonkiyebushra">
+                  <i class="fab fa-github fa-10x github"></i>
+                </a>
+                <a href="https://www.linkedin.com/in/bushra-b-687897125/"
+                  ><i class="fab fa-linkedin fa-10x linkedin"></i
+                ></a>
+              </div>
+            </div>
+          </div>
         </section>
       </main>
       <footer>
