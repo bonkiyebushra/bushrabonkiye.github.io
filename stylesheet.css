@@ -106,7 +106,7 @@ main {
   /* box-shadow: 0px 0px 5px rgba(237, 100, 15, 0.534); */
 }
 
-.text {
+.intro_text {
   width: 50%;
   text-align: center;
   margin-bottom: 3rem;
@@ -123,6 +123,7 @@ main {
   margin-bottom: auto;
   /* min-height: 30rem; */
   padding: 5rem 2rem;
+  padding: 5rem 2rem 5rem 3.5rem;
 }
 
 /* #services h2 {} */
@@ -132,7 +133,7 @@ main {
   width: 99%;
   height: 90%;
   grid-template-columns: 40% 40%;
-  column-gap: 3%;
+  column-gap: 2.5rem;
   row-gap: 2rem;
   justify-content: center;
 }
@@ -141,6 +142,7 @@ main {
   position: relative;
   background-color: #162438;
   border-radius: 10px;
+  padding-top: 1.5rem;
 }
 
 #services h4 {
@@ -169,7 +171,7 @@ main {
 }
 
 #contact {
-  padding-bottom: 9rem;
+  padding-bottom: 4rem;
   background-color: #fdf6ec;
 }
 
@@ -193,7 +195,7 @@ main {
 
 .project-box,
 .service_box {
-  height: 16rem
+  /* height: 16rem */
 }
 
 .project-box img {
@@ -212,17 +214,12 @@ main {
 }
 
 #contact_card {
-  width: 80%;
+  width: 83%;
   margin-left: auto;
   margin-right: auto;
   display: grid;
-  grid-template-columns: 4.5fr 5fr;
+  grid-template-columns: 50% 45%;
   border-radius: 1rem;
-}
-
-#contact a {
-  /* padding: 145px 20px 45px 20px; */
-  padding: 3rem;
 }
 
 form {
@@ -293,6 +290,7 @@ textarea {
   background-image: url("./images/plant.jpg");
   /* background-position: 75% center; */
   background-size: cover;
+  
 }
 
 #social_media p{
@@ -302,15 +300,26 @@ textarea {
 .social_media_icons {
   display: flex;justify-content:  center;
   height: fit-content;
+  
 }
 
-.github {
+.social_media_icons a{
+  margin: 1rem;
+  width: 6rem;
+}
+
+.social_media_icons img{
+  /* margin: 2rem; */
+  width: 100%;
+}
+
+/* .github {
   color: #3f4e4f;
 }
 
 .linkedin {
   color: rgb(10, 102, 194);
-}
+} */
 
 .email {
   height: 9rem;
@@ -353,13 +362,28 @@ footer>p {
     font-size: 14px;
   }
 
+  #services {
+    padding-left: 1.5rem;
+    padding-right: 0;
+  }
+
   .project-tiles {
     grid-template-columns: 47% 47%;
   }
 
-  .text {
+  .intro_text {
     width: 75%;
     margin-bottom: 1.5rem;
+  }
+
+  #contact_card {
+    width: 95%;
+    grid-template-columns: 100%;
+    
+  }
+
+  #social_media {
+    order: -1;
   }
 }
 
@@ -372,15 +396,12 @@ footer>p {
     font-size: 2rem;
   }
 
-  .project-tiles {
-    grid-template-columns: 92%;
-
-  }
-
   #menu_bar {
     display: block;
     height: 1.5rem;
-    margin-left: .6rem;
+    /* margin-left: .6rem; */
+    margin-left: auto;
+    margin-right: 1rem;
   }
 
   #menu_bar path {
@@ -397,14 +418,25 @@ footer>p {
     background-color: rgb(249, 249, 249);
     color: black;
     display: none;
+    width: 100%;
     flex-direction: column;
-    left: .6rem;
-    top: 2rem;
+    /* right: .6rem; */
+    top: 5.5rem;
   }
 
   #navbar a {
     color: black;
     margin-bottom: .5rem;
+    margin-left: .5rem;
+  }
+
+  .service_tiles {
+    grid-template-columns: 80%;
+    row-gap: 3rem;
+  }
+
+  .project-tiles{
+    grid-template-columns: 92%;
   }
 
   footer {
